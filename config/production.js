@@ -1,4 +1,4 @@
 module.exports = {
   MODE: 'production',
-  DB_PATH: process.env.DB_PATH
+  DB_NAME: 'nodejs_chinook.sqlite3'
 };

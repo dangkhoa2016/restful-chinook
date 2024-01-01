@@ -1,22 +1,28 @@
 {
-  "name": "refactored-dynamic-example",
+  "name": "restful-chinook",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
     "start": "node index.js",
-    "dev": "nodemon index.js"
+    "dev": "nodemon index.js --ignore './client/**/*'",
+    "seed": "node db/seeds.mjs",
+    "migrate": "node db/migrations.js",
+    "production_migration": "NODE_ENV=production node db/migrations.js"
   },
-  "author": "",
+  "author": "Dang Khoa",
   "license": "ISC",
   "dependencies": {
-    "body-parser": "^1.19.0",
+    "body-parser": "^1.20.2",
     "cors": "^2.8.5",
-    "express": "^4.17.1",
+    "dotenv": "^16.4.5",
+    "express": "^4.18.2",
+    "inflection": "^3.0.0",
     "morgan": "^1.10.0",
-    "sqlite3": "^4.2.0"
+    "papaparse": "^5.4.1",
+    "sqlite3": "^5.1.7"
   },
   "devDependencies": {
-    "nodemon": "^2.0.3"
+    "nodemon": "^3.1.0"
   }
 }

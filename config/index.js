@@ -1,4 +1,5 @@
 'use strict'
+require('dotenv').config();
 
 // let's import the default configuration
 const defaults = require("./default.js");

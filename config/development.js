@@ -1,4 +1,4 @@
 module.exports = {
   MODE: 'development',
-  DB_PATH: 'db/chinook.sqlite'
+  DB_NAME: 'nodejs_chinook_development.sqlite3'
 };

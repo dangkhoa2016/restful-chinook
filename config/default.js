@@ -1,4 +1,6 @@
 module.exports = {
   MODE: 'default',
-  PORT: 8080,
+  PORT: process.env.PORT || 3000,
+  DB_PATH: process.env.DB_PATH,
+  DB_NAME: process.env.DB_NAME,
 };
